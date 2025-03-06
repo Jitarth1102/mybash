@@ -633,3 +633,5 @@ export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bi
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
+
+[[ -s /usr/share/autojump/autojump.bash ]] && source /usr/share/autojump/autojump.bash
