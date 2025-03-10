@@ -143,6 +143,9 @@ alias freshclam='sudo freshclam'
 alias vi='nvim'
 alias svi='sudo vi'
 alias vis='nvim "+set si"'
+alias supd='sudo dnf update --refresh -y'
+alias sdca='sudo dnf clean all'
+alias clf='clear && fastfetch'
 
 
 # Change directory aliases

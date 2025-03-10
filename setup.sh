@@ -239,7 +239,7 @@ create_fastfetch_config() {
     if [ -e "$USER_HOME/.config/fastfetch/config.jsonc" ]; then
         rm -f "$USER_HOME/.config/fastfetch/config.jsonc"
     fi
-    ln -svf "$GITPATH/config.jsonc" "$USER_HOME/.config/fastfetch/config.jsonc" || {
+    ln -svf "$GITPATH/config.jsonc" "$USER_HOME/.config/fastfetch/config.jsonc" && echo "${GREEN}Created symbolic link for fastfetch config${RC}"|| {
         echo "${RED}Failed to create symbolic link for fastfetch config${RC}"
         exit 1
     }
