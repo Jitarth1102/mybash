@@ -99,7 +99,7 @@ checkEnv() {
 
 installDepend() {
     ## Check for dependencies.
-    DEPENDENCIES='bash bash-completion tar bat tree multitail fastfetch wget unzip fontconfig'
+    DEPENDENCIES='bash bash-completion tar bat tree multitail fastfetch wget unzip fontconfig autojump'
     if ! command_exists nvim; then
         DEPENDENCIES="${DEPENDENCIES} neovim"
     fi
